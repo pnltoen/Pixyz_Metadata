@@ -1,3 +1,5 @@
+# 2024-01-02 See https://pnltoen.tistory.com/ for details
+
 def addingMetadata():
 	occurrences = scene.findByProperty('Name', '.*') #씬 전체에 있는 파트의 occurrences를 리스트로 받음
 	metadataComponents = scene.getComponentByOccurrence(occurrences, scene.ComponentType.Metadata) #메타데이터가 없는 경우 0 반환
@@ -14,7 +16,6 @@ def addingMetadata():
 			for propValue in definition:
 				print(f'{propValue.name}:{propValue.value}')
 				
-
 def getEntityproperties():
 	entity = 3
 	#a = core.getProperty(entity, "Transform") #getProperty
