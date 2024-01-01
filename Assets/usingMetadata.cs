@@ -21,13 +21,13 @@ public class usingMetadata : MonoBehaviour
             {
                 metadata.addOrSetProperty("Author", "pnltoen");
             }
+            ToAllChilds(parent.GetChild(i));
             /*string name = metadata.getProperty("PartNumber");
             if (name != null)
             {
                 Debug.Log(name);
             }*/
             //GameObject child = parent.GetChild(i).gameObject;
-            ToAllChilds(parent.GetChild(i));
         }
     }
 }
